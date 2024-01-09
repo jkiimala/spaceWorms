@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-
 @keyframes growAndFade {
   0% {
     opacity: 1;
@@ -82,27 +81,53 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  font-weight: bold;
   height: 30px;
-  background-color: #0c0663;
-  color: white;
+  background-color: #00eeff;
+  color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.sticky-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #00eeff;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+}
 
+.sticky-banner span {
+  font-size: 20px;
+}
 
 .right-text {
-  color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
   margin-left: auto;
-  margin-right: 10em;
 }
 
 h2 {
-  color: #00fff7;
+  color: black;
   margin-left: auto;
 }
 
+#github-link > a {
+  color: rgb(0, 0, 0);
+  margin-left: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#github-link:hover {
+  transform: scale(1.15);
+}
 
 .points-hover {
   animation: growAndFade 1s ease-out;
@@ -134,7 +159,6 @@ h2 {
 .soundOnOff img {
   width: 28px;
   transition: transform 0.3s ease;
-  margin-top: 6px;
 }
 
 .soundOnOff img:hover {
@@ -144,10 +168,10 @@ h2 {
 
 #scoreA,
 #scoreB {
-  color: rgb(255, 255, 255);
+  color: rgb(114, 4, 4);
 }
 
 canvas {
   border: 3px solid rgb(255, 255, 255);
-  background: rgba(109, 108, 172, 0.795)
+  background: rgba(13, 46, 95, 0.795)
 }

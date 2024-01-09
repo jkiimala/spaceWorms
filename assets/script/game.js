@@ -309,10 +309,10 @@ function drawStarFromCircle(x, y, radius, spikes, color) {
     canvasContext.fill();
 
     // Piirretään pallo tähden päälle, jos kyseessä on miina
-    if (color == "white") {
+    if (color == "black") {
         canvasContext.beginPath();
         canvasContext.arc(xCenter, yCenter, radius / 1.4, 0, 2 * Math.PI);
-        canvasContext.fillStyle = "white";
+        canvasContext.fillStyle = "black";
         canvasContext.fill();
         canvasContext.closePath();
     }
@@ -329,7 +329,7 @@ function drawStars() {
 function drawMines() {
     for (let i = 0; i < mines.length; i++) {
         const mine = mines[i];
-        drawStarFromCircle(mine.x, mine.y, 25, 8,'white');
+        drawStarFromCircle(mine.x, mine.y, 25, 8,'black');
     }
 }
 
@@ -737,7 +737,7 @@ function game(gameType) {
     };
 
     if(gameType==1){
-        
+        gameControlInfoContent.innerHTML='&nbsp&nbsp&nbsp&nbspGame Controls: Arrow Keys LEFT and RIGHT';
         scoreSingleContent.style.display ='flex';
         wormB_checkStars();
         wormB_checkCollisions();
