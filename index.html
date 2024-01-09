@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+	<link rel="icon" type="image/x-icon" href="assets/images/fav.ico">
+    <title>Worms Wars - Petri - Jarno - Enes</title>
+</head>
+
+<body>
+    <div class="sticky-top-banner" id="topBanner">
+        <h2 id="scoreBannerMulti">Worm 1 : <span id="scoreA">&#160; 0</span>&#160;Worm 2 :<span id="scoreB">&#160; 0</span></h2>
+        <h2 id="scoreBannerSingle">Your score :&#160; <span id="scoreSingle">0</span></h2>
+        <span class="right-text">
+            <span style="margin-right: 75px">Sound: On/Off:</span>
+            <span class="soundOnOff"><img src="assets/images/soundOn.png" alt="..." id="soundOnOff"></span>
+            <span style="margin-right: 2px">Points:</span>
+            <span style="font-size:140%;color:rgb(255, 85, 0);">&starf;</span>&#160;+10&#160;
+            <span style="font-size:160%">&#10040;</span>&#160;-5</span>
+            
+    </div>
+
+    <p id="logo"></p>
+    <div id="pointsHoverA"></div>
+    <div id="pointsHoverB"></div>
+     
+    <canvas id="canvas" width="800" height="800"></canvas>
+    <div class="image-container" id="gameTypeSelect" onmouseover="popSound()" >
+        <img src="assets/images/singleplayer.png" alt="..." onclick="game(1)">
+        <img src="assets/images/multiplayer.png" alt="..." onclick="game(2)">
+    </div>
+
+      
+    <script src="assets/script/game.js"></script>
+ 
+</body>
+</html>
