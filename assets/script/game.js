@@ -608,7 +608,7 @@ function drawGameOver() {
 
     const newGameButtonWidth = 140;
     const newGameButtonHeight = 40;
-    const newGameText = "TRY AGAIN";
+    const newGameText = "PLAY AGAIN";
     const newGameTextSize = 20;
 
     // Lisää reunus
