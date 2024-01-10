@@ -577,12 +577,12 @@ function drawGameOver() {
     let isVisible = true;
 
     canvasContext.fillStyle = "red"; 
-    canvasContext.font = "bold 85px Montserrat";
-    drawCenteredText(winText, -10, "green"); 
+    canvasContext.font = "bold 55px Ethnocentric Rg";
+    drawCenteredText(winText, -20, "green"); 
 
     canvasContext.fillStyle = "white";
-    canvasContext.font = "35px Montserrat";
-    drawCenteredText(gameOverText, -120, "red"); 
+    canvasContext.font = "35px Ethnocentric Rg";
+    drawCenteredText(gameOverText, -100, "red"); 
 
     
     audioGameOver.play();
@@ -602,8 +602,8 @@ function drawGameOver() {
     
     if(!multiPlayerControl){
         canvasContext.fillStyle = "white";
-        canvasContext.font = "20px Montserrat";
-        drawCenteredText(`Your previous score: ${playerBScoreOld}`, -65, "white");
+        canvasContext.font = "20px Ethnocentric Rg";
+        //drawCenteredText(`Your previous score: ${playerBScoreOld}`, -5, "white");//
     };
 
     const newGameButtonWidth = 140;
@@ -634,7 +634,7 @@ function drawGameOver() {
     canvasContext.fillStyle = "green";
     canvasContext.fillRect(canvas.width / 2 - newGameButtonWidth / 2, canvas.height / 2 + 40, newGameButtonWidth, newGameButtonHeight);
     canvasContext.fillStyle = "white";
-    canvasContext.font = `${newGameTextSize}px Montserrat`;
+    canvasContext.font = `${newGameTextSize}px Lato`;
 
     const newGameTextWidth = canvasContext.measureText(newGameText).width;
     canvasContext.fillText(newGameText, canvas.width / 2 - newGameTextWidth / 2, canvas.height / 2 + 40 + newGameButtonHeight / 2 + newGameTextSize / 2 - 2);
@@ -651,7 +651,7 @@ function drawGameOver() {
 function drawCenteredText(text, yOffset, color) {
     canvasContext.fillStyle = color;
     const fontSize = 35;
-    canvasContext.font = `bold ${fontSize}px Montserrat`;
+    canvasContext.font = `bold ${fontSize}px Ethnocentric Rg`;
 
     // Mittaa tekstin leveys
     const textWidth = canvasContext.measureText(text).width;
