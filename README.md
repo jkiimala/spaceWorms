@@ -5,12 +5,9 @@
 ## Images - Freepik.com
 https://www.freepik.com/
 
-
-## Demo
-<p align="center"><img src="assets/images/demo.gif" width="600"/></p>
-
-## Test Online
-[www.petri.jarno.enes.fi](https://petri.jarno.enes.fi/)
+## Sounds - Pixabay.com
+https://pixabay.com/fi/
+https://voicemaker.in/
 
 ## Authors
 [Petri](https://github.com/PeteK4) - [Jarno](https://jkiimala.github.io/) - [Enes](https://github.com/EnesFin)
