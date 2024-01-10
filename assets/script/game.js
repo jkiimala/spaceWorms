@@ -578,11 +578,11 @@ function drawGameOver() {
 
     canvasContext.fillStyle = "red"; 
     canvasContext.font = "bold 85px Montserrat";
-    drawCenteredText(winText, -20, "green"); 
+    drawCenteredText(winText, -10, "green"); 
 
     canvasContext.fillStyle = "white";
     canvasContext.font = "35px Montserrat";
-    drawCenteredText(gameOverText, -100, "red"); 
+    drawCenteredText(gameOverText, -120, "red"); 
 
     
     audioGameOver.play();
@@ -603,7 +603,7 @@ function drawGameOver() {
     if(!multiPlayerControl){
         canvasContext.fillStyle = "white";
         canvasContext.font = "20px Montserrat";
-        drawCenteredText(`Your previous score: ${playerBScoreOld}`, -65, "black");
+        drawCenteredText(`Your previous score: ${playerBScoreOld}`, -65, "white");
     };
 
     const newGameButtonWidth = 140;
