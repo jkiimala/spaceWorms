@@ -1,6 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/ethnocentric');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 
 
@@ -41,15 +41,16 @@ body {
 }
 
 .image-container img {
-  width: 300px;
-  height: 300px;
-  margin: 0 10px;
+  width: 400px;
+  height: 400px;
+  margin: 0 -40px;
   transition: transform 0.3s ease;
 }
 
 .image-container img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   cursor: pointer;
+  
 }
 
 #scoreBannerMulti,
@@ -69,8 +70,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   overflow: hidden;
   background: url('../images/logo.png') 0 0 no-repeat;
   background-size: contain;
@@ -99,8 +100,6 @@ body {
 }
 
 
-
-
 .right-text {
   color: black;
   font-weight: lighter;
@@ -116,7 +115,7 @@ h2 {
 
 #gameControlInfo {
   margin-top: 4px;
-  padding: 155px;
+  padding: 100px;
 }
 
 .points-hover {
@@ -162,6 +161,8 @@ h2 {
 }
 
 canvas {
+  margin-top: 30px;
   border: 3px solid rgb(255, 255, 255);
   background: rgba(13, 46, 95, 0.795)
+  
 }

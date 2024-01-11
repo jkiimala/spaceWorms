@@ -5,12 +5,9 @@
 ## Images - Freepik.com
 https://www.freepik.com/
 
-## Sounds - Pixabay.com
+## Sounds - Pixabay.com & Voicemaker.in
 https://pixabay.com/fi/
 https://voicemaker.in/
 
 ## Authors
 [Petri](https://github.com/PeteK4) - [Jarno](https://jkiimala.github.io/) - [Enes](https://github.com/EnesFin)
-
-## LICENSE
-MIT

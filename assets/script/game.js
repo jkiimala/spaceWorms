@@ -603,7 +603,7 @@ function drawGameOver() {
     if(!multiPlayerControl){
         canvasContext.fillStyle = "white";
         canvasContext.font = "20px Ethnocentric Rg";
-        //drawCenteredText(`Your previous score: ${playerBScoreOld}`, -5, "white");//
+        
     };
 
     const newGameButtonWidth = 140;
@@ -613,6 +613,7 @@ function drawGameOver() {
 
     // Lisää reunus
     canvasContext.strokeStyle = "white";
+    canvasContext.font = "20px Ethnocentric Rg";
     canvasContext.lineWidth = 4;
     canvasContext.strokeRect(canvas.width / 2 - 70, canvas.height / 2 + 40, 140, 40);
 
@@ -634,7 +635,7 @@ function drawGameOver() {
     canvasContext.fillStyle = "green";
     canvasContext.fillRect(canvas.width / 2 - newGameButtonWidth / 2, canvas.height / 2 + 40, newGameButtonWidth, newGameButtonHeight);
     canvasContext.fillStyle = "white";
-    canvasContext.font = `${newGameTextSize}px Lato`;
+    canvasContext.font = `${newGameTextSize}px Montserrat`;
 
     const newGameTextWidth = canvasContext.measureText(newGameText).width;
     canvasContext.fillText(newGameText, canvas.width / 2 - newGameTextWidth / 2, canvas.height / 2 + 40 + newGameButtonHeight / 2 + newGameTextSize / 2 - 2);
