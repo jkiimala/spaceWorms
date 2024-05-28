@@ -145,6 +145,7 @@ function wormA_checkStars() {
 
         if (distance < 25) {
             increaseScore('A', 10);
+            audioEat.load();
             audioEat.play();
 
             generateStars();
@@ -179,6 +180,7 @@ function wormA_checkStars() {
                 };
 
             increaseScore('A', -5);
+            audioMine.load();
             audioMine.play();
             generateMines();
         }
@@ -193,6 +195,7 @@ function wormB_checkStars() {
        
         if (distance < 25) {
             increaseScore('B', 10);
+            audioEat.load();
             audioEat.play();
 
             generateStars();
@@ -228,6 +231,7 @@ function wormB_checkStars() {
                 };
 
             increaseScore('B', -5);
+            audioMine.load();
             audioMine.play();
             generateMines();      
         }
@@ -585,17 +589,23 @@ function drawGameOver() {
     drawCenteredText(gameOverText, -100, "red"); 
 
     
+    audioGameOver.load();
     audioGameOver.play();
     setTimeout(function() {
         if (playerWin == "WORM 1 WINS!") {
+            audioWin1.load();
             audioWin1.play();
         } else if (playerWin == "TIE GAME!") {
+            audioTie.load();
             audioTie.play();
         } else if(playerWin == "WORM 2 WINS!") {
+            audioWin2.load();
             audioWin2.play();
         } else if(!multiPlayerControl){
+            audioGoodGame.load();
             audioGoodGame.play();
         }else{
+            audioGoodGame.load();
             audioGoodGame.play();
         }
     }, 800);
@@ -678,6 +688,7 @@ function toggleSound() {
         audioMine.muted = false;
         audioPop.muted = false;
         audioStart.muted = false;
+        audioPop.load();
         audioPop.play();
         soundControl=0;
 
@@ -718,6 +729,7 @@ function handleNewGameClick(event) {
 //Kun valitset pelityypin, tehosteen ääni ennen painikkeiden napsauttamista.(MouseOver)
 
 function popSound(){
+    audioPop.load()
     audioPop.play()
         .then(() => {
         })
@@ -734,6 +746,7 @@ function game(gameType) {
 
     if(i==1){
         audioStart.volume = 0.5;
+        audioStart.load();
         audioStart.play();
     };
 
