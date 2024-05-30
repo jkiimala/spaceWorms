@@ -73,7 +73,7 @@ body {
   width: 400px;
   height: 400px;
   overflow: hidden;
-  background: url('../images/logo.png') 0 0 no-repeat;
+  background: url('../images/logo.webp') 0 0 no-repeat;
   background-size: contain;
 }
 
